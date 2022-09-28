@@ -10,11 +10,10 @@ class User:
         self.username=username
         self.followers = 0
         
-
 user_1=User("001","Hajra")
 print(user_1.id)
 
 user_2=User("002","Hadia")
-
+print(user_2.id)
 print(user_2.username)
 print(user_2.followers)
