@@ -4,6 +4,8 @@ from main_classes import Snake
 from food import Food
 from scoreboard import Scoreboard
 
+#Setting up Screen
+
 screen = Screen()
 screen.setup(width = 600, height = 600)
 screen.bgcolor('black')
@@ -15,6 +17,8 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
+
+#Controlling  the snake with keys
 
 screen.listen()
 screen.onkey(snake.up , "Up")
@@ -46,14 +50,6 @@ while game_is_on:
         if snake.head.distance(segment)<10:
             game_is_on = False
             scoreboard.game_over()
-
-
-    
-
-
-
-
-
 
 
 
